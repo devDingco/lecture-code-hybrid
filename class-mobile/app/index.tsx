@@ -6,8 +6,9 @@
 // import WebviewInternetFailPage from "@/components/section01/01-05-webview-internet-fail";
 
 // [ Section02 ]
-import RatioScalingPage from "@/components/section02/02-01-ratio-scaling";
+// import RatioScalingPage from "@/components/section02/02-01-ratio-scaling";
+import LayoutHeaderGlobalPage from "@/components/section02/02-02-layout-header-global";
 
 export default function 나의시작화면() {
-    return <RatioScalingPage />
+    return <LayoutHeaderGlobalPage />
 }
