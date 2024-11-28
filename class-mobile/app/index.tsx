@@ -7,8 +7,9 @@
 
 // [ Section02 ]
 // import RatioScalingPage from "@/components/section02/02-01-ratio-scaling";
-import LayoutHeaderGlobalPage from "@/components/section02/02-02-layout-header-global";
+// import LayoutHeaderGlobalPage from "@/components/section02/02-02-layout-header-global";
+import LayoutHeaderLocalPage from "@/components/section02/02-03-layout-header-local";
 
 export default function 나의시작화면() {
-    return <LayoutHeaderGlobalPage />
+    return <LayoutHeaderLocalPage />
 }
