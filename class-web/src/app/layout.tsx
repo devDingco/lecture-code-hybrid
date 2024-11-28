@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Layout from "@/commons/layout/02-02-layout-header-global";
 import LayoutGlobalAndLocal from "@/commons/layout/02-03-layout-header-local";
+import LayoutTransparent from "@/commons/layout/02-04-layout-header-transparent";
+import LayoutContentsShortAndLong from "@/commons/layout/02-05-layout-footer-contents-short-and-long";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,7 +36,13 @@ export default function RootLayout({
         {/* <Layout>{children}</Layout> */}
 
         {/* 2). 02-03-layout-header-local 이후 */}
-        <LayoutGlobalAndLocal>{children}</LayoutGlobalAndLocal>
+        {/* <LayoutGlobalAndLocal>{children}</LayoutGlobalAndLocal> */}
+
+        {/* 3). 02-04-layout-header-transparent 이후 */}
+        {/* <LayoutTransparent>{children}</LayoutTransparent> */}
+
+        {/* 4). 02-05-layout-footer-contents-short-and-long */}
+        <LayoutContentsShortAndLong>{children}</LayoutContentsShortAndLong>
       </body>
     </html>
   );
