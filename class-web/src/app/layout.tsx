@@ -5,6 +5,7 @@ import Layout from "@/commons/layout/02-02-layout-header-global";
 import LayoutGlobalAndLocal from "@/commons/layout/02-03-layout-header-local";
 import LayoutTransparent from "@/commons/layout/02-04-layout-header-transparent";
 import LayoutContentsShortAndLong from "@/commons/layout/02-05-layout-footer-contents-short-and-long";
+import DeviceSetting from "@/commons/settings/03-06-device-setting";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -45,7 +46,10 @@ export default function RootLayout({
         {/* <LayoutContentsShortAndLong>{children}</LayoutContentsShortAndLong> */}
 
         {/* 5). 03-01-webview-log 이후 => 레이아웃 의존하지 않고 수업! */}
-        {children}
+        {/* {children} */}
+
+        {/* 6). 03-06-post-message-device-api-promise-refactoring */}
+        <DeviceSetting>{children}</DeviceSetting>
       </body>
     </html>
   );
