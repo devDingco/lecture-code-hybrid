@@ -15,8 +15,9 @@
 // [ Section03 ]
 // import WebviewLogPage from "@/components/section03/03-01-webview-log";
 // import PostMessageWebToAppPage from "@/components/section03/03-02-post-message-web-to-app";
-import PostMessageAppToWebPage from "@/components/section03/03-03-post-message-app-to-web";
+// import PostMessageAppToWebPage from "@/components/section03/03-03-post-message-app-to-web";
+import PostMessageDeviceApiPage from "@/components/section03/03-04-post-message-device-api";
 
 export default function 나의시작화면() {
-    return <PostMessageAppToWebPage />
+    return <PostMessageDeviceApiPage />
 }
