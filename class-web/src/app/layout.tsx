@@ -42,7 +42,10 @@ export default function RootLayout({
         {/* <LayoutTransparent>{children}</LayoutTransparent> */}
 
         {/* 4). 02-05-layout-footer-contents-short-and-long */}
-        <LayoutContentsShortAndLong>{children}</LayoutContentsShortAndLong>
+        {/* <LayoutContentsShortAndLong>{children}</LayoutContentsShortAndLong> */}
+
+        {/* 5). 03-01-webview-log 이후 => 레이아웃 의존하지 않고 수업! */}
+        {children}
       </body>
     </html>
   );
