@@ -1,0 +1,27 @@
+const 사탕찾기 = {
+    포도맛: () => {
+        console.log("포도맛 선택!!")
+    },
+    딸기맛: () => {
+        console.log("딸기맛 선택!!")
+    },
+    박하맛: () => {
+        console.log("박하맛 선택!!")
+    }
+}
+undefined
+
+사탕찾기.딸기맛()
+VM275:6 딸기맛 선택!!
+undefined
+
+사탕찾기["딸기맛"]()
+VM275:6 딸기맛 선택!!
+undefined
+
+const 내가좋아하는사탕 = "딸기맛"
+undefined
+
+사탕찾기[내가좋아하는사탕]()
+VM275:6 딸기맛 선택!!
+undefined

@@ -1,0 +1,41 @@
+const use나의사탕01 = () => {
+    const 포도맛 = () => {
+        console.log("포도맛 선택!!")
+    }
+    const 딸기맛 = () => {
+        console.log("딸기맛 선택!!")
+    }
+
+    return {
+        포도맛,
+        딸기맛
+    }
+}
+undefined
+
+const use나의사탕02 = () => {
+    const 박하맛 = () => {
+        console.log("박하맛 선택!!")
+    }
+
+    return {
+        박하맛
+    }
+}
+
+undefined
+const 사탕찾기 = {
+    ...use나의사탕01(), // { 포도맛, 딸기맛 }
+    ...use나의사탕02(), // { 박하맛 }
+}
+undefined
+
+사탕찾기
+{포도맛: ƒ, 딸기맛: ƒ, 박하맛: ƒ}딸기맛: () => {         console.log("딸기맛 선택!!")     }박하맛: () => {         console.log("박하맛 선택!!")     }포도맛: () => {         console.log("포도맛 선택!!")     }[[Prototype]]: Object
+
+const 내가좋아하는사탕 = "포도맛"
+undefined
+
+사탕찾기[내가좋아하는사탕]()
+VM745:3 포도맛 선택!!
+undefined

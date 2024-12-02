@@ -22,8 +22,9 @@
 
 // [ Section04 ]
 // import DeviceSystemApiPage from "@/components/section04/04-01-device-system-api";
-import DeviceLocationApiPage from "@/components/section04/04-02-device-location-api";
+// import DeviceLocationApiPage from "@/components/section04/04-02-device-location-api";
+import DeviceApiRefactoringPage from "@/components/section04/04-03-device-api-refactoring";
 
 export default function 나의시작화면() {
-    return <DeviceLocationApiPage />
+    return <DeviceApiRefactoringPage />
 }
