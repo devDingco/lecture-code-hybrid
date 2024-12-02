@@ -21,8 +21,9 @@
 // import PostMessageDeviceApiPromiseRefactoringPage from "@/components/section03/03-06-post-message-device-api-promise-refactoring";
 
 // [ Section04 ]
-import DeviceSystemApiPage from "@/components/section04/04-01-device-system-api";
+// import DeviceSystemApiPage from "@/components/section04/04-01-device-system-api";
+import DeviceLocationApiPage from "@/components/section04/04-02-device-location-api";
 
 export default function 나의시작화면() {
-    return <DeviceSystemApiPage />
+    return <DeviceLocationApiPage />
 }
