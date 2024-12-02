@@ -18,8 +18,11 @@
 // import PostMessageAppToWebPage from "@/components/section03/03-03-post-message-app-to-web";
 // import PostMessageDeviceApiPage from "@/components/section03/03-04-post-message-device-api";
 // import PostMessageDeviceApiPromisePage from "@/components/section03/03-05-post-message-device-api-promise";
-import PostMessageDeviceApiPromiseRefactoringPage from "@/components/section03/03-06-post-message-device-api-promise-refactoring";
+// import PostMessageDeviceApiPromiseRefactoringPage from "@/components/section03/03-06-post-message-device-api-promise-refactoring";
+
+// [ Section04 ]
+import DeviceSystemApiPage from "@/components/section04/04-01-device-system-api";
 
 export default function 나의시작화면() {
-    return <PostMessageDeviceApiPromiseRefactoringPage />
+    return <DeviceSystemApiPage />
 }
