@@ -24,8 +24,9 @@
 // import DeviceSystemApiPage from "@/components/section04/04-01-device-system-api";
 // import DeviceLocationApiPage from "@/components/section04/04-02-device-location-api";
 // import DeviceApiRefactoringPage from "@/components/section04/04-03-device-api-refactoring";
-import ScheduleNotificationsPage from "@/components/section05/05-01-schedule-notifications";
+// import ScheduleNotificationsPage from "@/components/section05/05-01-schedule-notifications";
+import ScheduleNotificationsClickPage from "@/components/section05/05-02-schedule-notifications-click";
 
 export default function 나의시작화면() {
-    return <ScheduleNotificationsPage />
+    return <ScheduleNotificationsClickPage />
 }
