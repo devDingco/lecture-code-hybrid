@@ -30,8 +30,11 @@
 // import ScheduleNotificationsClickPage from "@/components/section05/05-02-schedule-notifications-click";
 
 // [ Section06 ]
-import OpenSettingsPage from "@/components/section06/06-01-open-settings";
+// import OpenSettingsPage from "@/components/section06/06-01-open-settings";
+
+// [ Section07 ]
+import PictureFullScreenPage from "@/components/section07/07-01-picture-full-screen";
 
 export default function 나의시작화면() {
-    return <OpenSettingsPage />
+    return <PictureFullScreenPage />
 }
