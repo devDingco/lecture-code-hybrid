@@ -33,7 +33,7 @@
 // import OpenSettingsPage from "@/components/section06/06-01-open-settings";
 
 // [ Section07 ]
-import PictureFullScreenPage from "@/components/section07/07-01-picture-full-screen";
+import PictureFullScreenPage from "@/components/section07/07-01-picture-full-screen/02-after-index";
 
 export default function 나의시작화면() {
     return <PictureFullScreenPage />

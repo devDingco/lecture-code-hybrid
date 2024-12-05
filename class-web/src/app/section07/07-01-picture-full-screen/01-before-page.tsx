@@ -4,31 +4,19 @@ import { useDeviceSetting } from "@/commons/settings/05-02-device-setting-redire
 import { useState } from "react"
 
 export default function PictureFullScreenPage() {
-    const [isLoading, setIsLoading] = useState(false)
     const [isFullScreen, setIsFullScreen] = useState(false)
     const { fetchApp } = useDeviceSetting()
 
     const onClickFullScreen = async () => {
-        setIsLoading(true) // 로딩처리하기
-
-        // 다음 틱으로 넘기기
-        window.setTimeout(() => {
-            setIsFullScreen(true)
-            fetchApp({ query: "toggleDeviceLayoutForNotchTranslucentSet" })
-
-            window.setTimeout(() => {
-                setIsLoading(false) // 로딩 해제하기
-            }, 100)
-        }, 100)
+        setIsFullScreen(true)
+        await fetchApp({ query: "toggleDeviceLayoutForNotchTranslucentSet" })
     }
 
     const onClickClose = async () => {
-        // 여기도 동일한 방법으로 적용하기!
         setIsFullScreen(false)
         await fetchApp({ query: "toggleDeviceLayoutForNotchTranslucentSet" })
     }
 
-    if(isLoading) return <></>
     return (
         <div>
             {isFullScreen ? (
@@ -57,7 +45,7 @@ export default function PictureFullScreenPage() {
                 </div>
             ): (
                 <>
-                    <img src="/images/02-04-dog.jpg" style={{width: "100px"}} />
+                    <img src="/images/02-04-dog.jpg" />
                     <button onClick={onClickFullScreen}>전체화면에서 사진 보기</button>
                 </>
             )}
