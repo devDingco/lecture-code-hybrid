@@ -31,7 +31,7 @@ export default function PictureFullScreenPinchZoomPage() {
                     onRequest(request.query, request.variables)
                 }}
                 // textZoom={100} 텍스트 크기 강제 고정 => 사용자 앱 내 브라우저 폰트크기 등 개별설정 막기
-                setBuiltInZoomControls={layout.isPinchZoom}
+                // setBuiltInZoomControls={layout.isPinchZoom} // 핀치줌 허용 여부(단, 안드로이드에서만 작동하므로 => 브라우저 viewport로 변경하자!)
             />
         </SafeAreaView>
     )
