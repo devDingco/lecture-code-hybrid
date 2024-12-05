@@ -16,7 +16,13 @@ export default function PictureFullScreenPage() {
             setIsFullScreen(true)
             fetchApp({ query: "toggleDeviceLayoutForNotchTranslucentSet" })
             fetchApp({ query: "toggleDeviceLayoutForPinchZoomSet" })
-            document.querySelector("meta[name='viewport']")?.setAttribute("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes")
+            document.querySelector("meta[name='viewport']")?.setAttribute("content", `
+                width=device-width, 
+                initial-scale=1.0, 
+                minimum-scale=1.0, 
+                maximum-scale=3.0, 
+                user-scalable=yes
+            `)
 
             window.setTimeout(() => {
                 setIsLoading(false) // 로딩 해제하기
@@ -32,7 +38,13 @@ export default function PictureFullScreenPage() {
             setIsFullScreen(false)
             fetchApp({ query: "toggleDeviceLayoutForNotchTranslucentSet" })
             fetchApp({ query: "toggleDeviceLayoutForPinchZoomSet" })
-            document.querySelector("meta[name='viewport']")?.setAttribute("content", "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+            document.querySelector("meta[name='viewport']")?.setAttribute("content", `
+                width=device-width,
+                initial-scale=1.0,
+                minimum-scale=1.0,
+                maximum-scale=1.0,
+                user-scalable=no
+            `)
 
             window.setTimeout(() => {
                 setIsLoading(false)
