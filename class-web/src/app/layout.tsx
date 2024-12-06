@@ -8,6 +8,7 @@ import LayoutContentsShortAndLong from "@/commons/layout/02-05-layout-footer-con
 import DeviceSetting from "@/commons/settings/03-06-device-setting";
 import DeviceSettingVariables from "@/commons/settings/05-01-device-setting-variables";
 import DeviceSettingRedirect from "@/commons/settings/05-02-device-setting-redirect";
+import DeviceSettingBack from "@/commons/settings/08-01-device-setting-back";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -66,7 +67,10 @@ export default function RootLayout({
         {/* <DeviceSettingVariables>{children}</DeviceSettingVariables> */}
       
         {/* 8). 05-02-schedule-notifications-click 이후 */}
-        <DeviceSettingRedirect>{children}</DeviceSettingRedirect>
+        {/* <DeviceSettingRedirect>{children}</DeviceSettingRedirect> */}
+
+        {/* 9). 08-01-android-back 이후 */}
+        <DeviceSettingBack>{children}</DeviceSettingBack>
       </body>
     </html>
   );

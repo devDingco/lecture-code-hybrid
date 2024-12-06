@@ -34,8 +34,11 @@
 
 // [ Section07 ]
 // import PictureFullScreenPage from "@/components/section07/07-01-picture-full-screen/02-after-index";
-import PictureFullScreenPinchZoomPage from "@/components/section07/07-02-picture-full-screen-pinch-zoom";
+// import PictureFullScreenPinchZoomPage from "@/components/section07/07-02-picture-full-screen-pinch-zoom";
+
+// [ Section08 ]
+import AndroidBackPage from "@/components/section08/08-01-android-back";
 
 export default function 나의시작화면() {
-    return <PictureFullScreenPinchZoomPage />
+    return <AndroidBackPage />
 }
