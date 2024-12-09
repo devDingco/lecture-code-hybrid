@@ -38,8 +38,11 @@
 
 // [ Section08 ]
 // import AndroidBackPage from "@/components/section08/08-01-android-back";
-import AndroidBackAndExitPage from "@/components/section08/08-04-android-back-and-exit";
+// import AndroidBackAndExitPage from "@/components/section08/08-04-android-back-and-exit";
+
+// [ Section09 ]
+import ViewTransitionPage from "@/components/section09/09-01-view-transition";
 
 export default function 나의시작화면() {
-    return <AndroidBackAndExitPage />
+    return <ViewTransitionPage />
 }

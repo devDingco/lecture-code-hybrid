@@ -6,3 +6,58 @@ html {
   /* 피그마기본가로(360) : HTML기본폰트(16) = 내기계사이즈(100vw) : 조정폰트(x) */
   font-size: calc((40 / 9) * 1vw);
 }
+
+/* 09-01-view-transition 수업에서 페이지이동애니메이션 추가! */
+@keyframes 이동하기_이전페이지 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes 이동하기_다음페이지 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+html::view-transition-old(root) {
+  animation-name: 이동하기_이전페이지;
+  animation-duration: 0.2s;
+}
+html::view-transition-new(root) {
+  animation-name: 이동하기_다음페이지;
+  animation-duration: 0.5s;
+}
+
+@keyframes 뒤로가기_이전페이지 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes 뒤로가기_다음페이지 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html.뒤로가기::view-transition-old(root) {
+  animation-name: 뒤로가기_이전페이지;
+  animation-duration: 0.5s;
+}
+html.뒤로가기::view-transition-new(root) {
+  animation-name: 뒤로가기_다음페이지;
+  animation-duration: 1s;
+}

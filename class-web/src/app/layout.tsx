@@ -10,6 +10,8 @@ import DeviceSettingVariables from "@/commons/settings/05-01-device-setting-vari
 import DeviceSettingRedirect from "@/commons/settings/05-02-device-setting-redirect";
 import DeviceSettingBack from "@/commons/settings/08-01-device-setting-back";
 import DeviceSettingBackAndExit from "@/commons/settings/08-04-device-setting-back-and-exit";
+import DeviceSettingViewTransition from "@/commons/settings/09-01-device-setting-view-transition";
+import RoutingSettingViewTransition from "@/commons/settings/09-01-routing-setting-view-transition";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -74,7 +76,15 @@ export default function RootLayout({
         {/* <DeviceSettingBack>{children}</DeviceSettingBack> */}
 
         {/* 10). 08-04-android-back-and-exit 이후 */}
-        <DeviceSettingBackAndExit>{children}</DeviceSettingBackAndExit>
+        {/* <DeviceSettingBackAndExit>{children}</DeviceSettingBackAndExit> */}
+
+        {/* 11). 09-01-view-transition 이후 */}
+        <DeviceSettingViewTransition>
+          <RoutingSettingViewTransition>
+            {children}
+          </RoutingSettingViewTransition>
+        </DeviceSettingViewTransition>
+
       </body>
     </html>
   );
