@@ -41,11 +41,14 @@
 // import AndroidBackAndExitPage from "@/components/section08/08-04-android-back-and-exit";
 
 // [ Section09 ]
-import ViewTransitionPage from "@/components/section09/09-01-view-transition";
+// import ViewTransitionPage from "@/components/section09/09-01-view-transition";
 
 // [ Section10 ]
 // import LoginRefreshtokenPage from "@/components/section10/10-01-login-refreshtoken";
 
+// [ Section11 ]
+import PullToRefreshPage from "@/components/section11/11-01-pull-to-refresh";
+
 export default function 나의시작화면() {
-    return <ViewTransitionPage />
+    return <PullToRefreshPage />
 }
