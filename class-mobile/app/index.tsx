@@ -47,8 +47,11 @@
 // import LoginRefreshtokenPage from "@/components/section10/10-01-login-refreshtoken";
 
 // [ Section11 ]
-import PullToRefreshPage from "@/components/section11/11-01-pull-to-refresh";
+// import PullToRefreshPage from "@/components/section11/11-01-pull-to-refresh";
+
+// [ Section12 ]
+import MicroFrontendPage from "@/components/section12/12-01-micro-frontend";
 
 export default function 나의시작화면() {
-    return <PullToRefreshPage />
+    return <MicroFrontendPage />
 }
