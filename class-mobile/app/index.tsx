@@ -50,8 +50,9 @@
 // import PullToRefreshPage from "@/components/section11/11-01-pull-to-refresh";
 
 // [ Section12 ]
-import MicroFrontendPage from "@/components/section12/12-01-micro-frontend";
+// import MicroFrontendPage from "@/components/section12/12-01-micro-frontend";
+import MicroFrontendSharedCachePage from "@/components/section12/12-02-micro-frontend-shared-cache";
 
 export default function 나의시작화면() {
-    return <MicroFrontendPage />
+    return <MicroFrontendSharedCachePage />
 }

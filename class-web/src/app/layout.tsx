@@ -12,6 +12,8 @@ import DeviceSettingBack from "@/commons/settings/08-01-device-setting-back";
 import DeviceSettingBackAndExit from "@/commons/settings/08-04-device-setting-back-and-exit";
 import DeviceSettingViewTransition from "@/commons/settings/09-01-device-setting-view-transition";
 import RoutingSettingViewTransition from "@/commons/settings/09-01-routing-setting-view-transition";
+import ApolloSettingMicroFrontendSharedCache from "@/commons/settings/12-02-apollo-setting-micro-frontend-shared-cache";
+import DeviceSettingMicroFrontendSharedCache from "@/commons/settings/12-02-device-setting-micro-frontend-shared-cache";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -79,12 +81,18 @@ export default function RootLayout({
         {/* <DeviceSettingBackAndExit>{children}</DeviceSettingBackAndExit> */}
 
         {/* 11). 09-01-view-transition 이후 */}
-        <DeviceSettingViewTransition>
+        {/* <DeviceSettingViewTransition>
           <RoutingSettingViewTransition>
             {children}
           </RoutingSettingViewTransition>
-        </DeviceSettingViewTransition>
+        </DeviceSettingViewTransition> */}
 
+        {/* 12). 12-02-micro-frontend-shared-cache */}
+        <ApolloSettingMicroFrontendSharedCache>
+          <DeviceSettingMicroFrontendSharedCache>
+            {children}
+          </DeviceSettingMicroFrontendSharedCache>
+        </ApolloSettingMicroFrontendSharedCache>
       </body>
     </html>
   );
